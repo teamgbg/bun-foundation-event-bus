@@ -1,0 +1,48 @@
+{
+  "_generated": {
+    "system": "package-json@1.0.0",
+    "status": "generated",
+    "edit": "edit src/ — dependencies and exports derive from imports; everything else preserved"
+  },
+  "name": "@teamscala/event-bus",
+  "capability": "Typed in-process event bus with wildcard support, subscriber tracking, and central registry. The single sanctioned event-bus surface.",
+  "tier": "foundation",
+  "type": "module",
+  "version": "1.0.13",
+  "description": "Typed in-process event bus with wildcard support, subscriber tracking, and central registry. The single sanctioned event-bus surface.",
+  "imports": {
+    "#event-bus/*": "./src/*",
+    "#event-bus/*.ts": "./src/*.ts"
+  },
+  "files": [
+    "src"
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "bun-types": "*",
+    "@happy-dom/global-registrator": "*",
+    "@testing-library/react": "*"
+  },
+  "exports": {
+    "./create-event-bus": {
+      "types": "./src/create-event-bus.d.ts",
+      "default": "./src/create-event-bus.ts"
+    },
+    "./create-event-bus.ts": {
+      "types": "./src/create-event-bus.d.ts",
+      "default": "./src/create-event-bus.ts"
+    },
+    "./types": {
+      "types": "./src/types.d.ts",
+      "default": "./src/types.ts"
+    },
+    "./types.ts": {
+      "types": "./src/types.d.ts",
+      "default": "./src/types.ts"
+    }
+  },
+  "repository": "https://github.com/teamgbg/bun-foundation-event-bus",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org"
+  }
+}
